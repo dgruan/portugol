@@ -6,15 +6,19 @@ programa
 		inteiro dividendo, divisor, quociente, resto
 		escreva ("Digite o valor do divisor ")
 		leia(divisor)
-		escreva ("Digite o valor do quociente ")
-		leia(quociente)
-		escreva ("Digite o valor do resto")
-		leia(resto)
+		escreva ("Digite o valor do dividendo ")
+		leia(dividendo)
 
-		dividendo = divisor * quociente + resto
-		escreva ("O valor do dividendo é ", dividendo)
+		quociente = dividendo / divisor
+		escreva ("\nO valor do quociente é ", quociente)
+		resto = dividendo % divisor
+		escreva ("\nO valor do resto é: ", resto)
+
+		escreva ("\nDividendo: ", dividendo)
+		escreva ("\nDivisor: ", divisor)
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
