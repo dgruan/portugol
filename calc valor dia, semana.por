@@ -8,7 +8,5 @@ programa {
     escreva ("Valor recebido no dia é: ", valdia)
     escreva ("\nValor recebido na semana é: ", valsemana)
 
-
-    
   }
 }
