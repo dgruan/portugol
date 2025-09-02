@@ -3,6 +3,7 @@ programa {
     inteiro numero, dobro, triplo
     escreva ("Digite um número: ")
     leia(numero)
+
     se(numero > 0){
       dobro= numero * 2
       escreva ("Número positivo, o dobro é: ", dobro)
