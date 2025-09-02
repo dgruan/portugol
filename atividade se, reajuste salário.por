@@ -3,6 +3,7 @@ programa {
     real salario, reajuste1, reajuste2, reajuste3
     escreva("Digite o valor do seu salário ")
     leia(salario)
+
     se(salario < 500){
       reajuste1= salario * 1.15
       escreva("O valor do seu salário com o reajuste será: ", reajuste1)
