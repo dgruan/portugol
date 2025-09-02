@@ -3,6 +3,7 @@ programa {
     inteiro idade
     escreva ("Digite a sua idade ")
     leia(idade)
+
     se(idade >=7 e idade <= 10){
       escreva("A sua categoria é: infantil")
     }senao se(idade >= 11 e idade <= 15){
