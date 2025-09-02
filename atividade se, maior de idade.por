@@ -7,9 +7,9 @@ programa {
     leia(datanasc)
     idade = dataatual - datanasc
        se(idade >= 18){
-        escreva ("Bem vindo a vida adulta")
+        escreva ("Você tem ", idade, " anos, seja bem vindo a vida adulta")
        }senao{
         escreva ("Nada a dizer")
+    }
   }
-}
 }
