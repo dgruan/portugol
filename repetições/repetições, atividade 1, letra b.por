@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		inteiro n, contPos = 0, contNeg= 0, qtd = 0
-		enquanto (qtd <4 10){
+		enquanto (qtd < 10){
 			escreva("Digite o número: ")
 			leia(n)		
 			
@@ -31,3 +31,4 @@ programa
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
+
