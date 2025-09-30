@@ -18,22 +18,22 @@ programa {
                     pare
           
           caso 2:
-          escreva("Digite o primeiro número: ")
-            leia(num1)
-          escreva("Digite o segundo número: ")
-            leia(num2)
-              sub= num1- num2
-                escreva("O resultado da subtração dos dois números é: ",sub)
-                  pare
+            escreva("Digite o primeiro número: ")
+              leia(num1)
+            escreva("Digite o segundo número: ")
+              leia(num2)
+                sub= num1- num2
+                  escreva("O resultado da subtração dos dois números é: ",sub)
+                    pare
 
           caso 3:
-          escreva("Digite o primeiro número: ")
-            leia(num1)
-          escreva("Digite o segundo número: ")
-            leia(num2)
-              mult= num1*num2
-                escreva("O resultado da multiplicação dos dois números é: ",mult)
-                  pare
+            escreva("Digite o primeiro número: ")
+              leia(num1)
+            escreva("Digite o segundo número: ")
+              leia(num2)
+                mult= num1*num2
+                  escreva("O resultado da multiplicação dos dois números é: ",mult)
+                    pare
 
           caso 4:
             escreva("Digite o primeiro número: ")
