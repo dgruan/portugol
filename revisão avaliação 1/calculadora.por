@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
     inteiro opcao, soma, sub, mult, div, num1, num2
-    escreva("1- Soma \n2- Subtração \n3- Multiplicação \n4- Divisão \n5-Sair do programa \n")
+    escreva("====================MENU====================\n1- Soma \n2- Subtração \n3- Multiplicação \n4- Divisão \n5-Sair do programa\n============================================ \n")
     escreva("Digite a opção desejada: ")
     leia(opcao)
 
