@@ -46,6 +46,9 @@ programa {
 
           caso 5:
             escreva("Saindo...")
+
+          caso contrario:
+            escreva("Digite uma opção válida!")
     }    
   }
 }
