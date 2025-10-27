@@ -17,7 +17,7 @@ programa
 				}
 			}
 		}
-		escreva("Matriz identidade de tamanho", tam, "x", tam, ":\n")
+		escreva("Matriz identidade de tamanho ", tam, "x", tam, ":\n")
 		para(i=0;i<tam;i++){
 			para(j=0;j<tam;j++){
 				escreva(matriz[i][j], " ")
@@ -26,6 +26,7 @@ programa
 		}
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
