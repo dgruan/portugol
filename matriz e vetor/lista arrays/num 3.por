@@ -1,29 +1,26 @@
 programa
 {
-	
 	funcao inicio()
 	{
-		inteiro num[15], i, base=1
+		inteiro num[15], cont[10], i, j
 		
-		para(i=0;i<15;i++){
+		
+		para(i=0; i<10; i++){
+			cont[i] = 0
+		}
+		
+		para(i=0; i<15; i++){
 			escreva("Digite um número entre 1 e 10: ")
 			leia(num[i])
-			enquanto(num[i]<1 ou num[i]>10){
-				escreva("Digite um número válido: ")
+			enquanto(num[i] < 1 ou num[i] > 10){
+				escreva("Número inválido! Digite novamente: ")
 				leia(num[i])
 			}
+			cont[num[i]-1] = cont[num[i]-1] + 1
+		}
+		escreva("Quantidade de vezes que cada número apareceu:\n")
+		para(i=0; i<10; i++){
+			escreva(i+1, ": ", cont[i], " vez(es)\n")
 		}
 	}
 }
-
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 262; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {num, 6, 10, 3};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
