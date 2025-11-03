@@ -1,7 +1,10 @@
 programa
 {
 	funcao msgVezes(inteiro x){
-		escreva("O grilo fez cricri ", x, " vez(es)")
+		inteiro i
+		para(i=0;i<x;i++){
+			escreva("\nCri Cri")
+		}
 	}
 	
 	funcao inteiro contGrilo(){
