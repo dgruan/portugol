@@ -1,3 +1,4 @@
+
 programa
 {
 
@@ -15,11 +16,13 @@ programa
 		faca{
 			escreva("Digite um número negativo para parar.\nDigite os números desejados: ")
 			leia(num)
-			se(num > maior){
+			se(num >= 0){
+				se(num > maior){
 				maior = num
-			}
-			se(num < menor){
+				}	
+				se(num < menor){
 				menor = num
+				}
 			}
 		}enquanto(num >= 0) 
 		
@@ -27,14 +30,3 @@ programa
 		escreva("\n")menorVal(menor)
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 503; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {maior, 14, 15, 5}-{menor, 14, 26, 5};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
