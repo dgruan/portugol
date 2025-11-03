@@ -45,19 +45,20 @@ programa
 			resultado = soma(n1, n2)
 		}senao{
 		
-			se (opcao == 2){
-				resultado = subtracao(n1, n2)
-			}senao{
+		se (opcao == 2){
+			resultado = subtracao(n1, n2)
+		}senao{
 				
-				se (opcao == 3){
-					resultado = multiplicacao(n1, n2)
-				}senao{
+		se (opcao == 3){
+			resultado = multiplicacao(n1, n2)
+		}senao{
 					
-					se (opcao == 4){
-						resultado = divisao(n1, n2)
-					}senao{
-						escreva("Opção inválida!\n")
-						retorne
+		se (opcao == 4){
+			resultado = divisao(n1, n2)
+		}senao{
+
+		  escreva("Opção inválida!\n")
+			retorne
 					}
 				}
 			}
