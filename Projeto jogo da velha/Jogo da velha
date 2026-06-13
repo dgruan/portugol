@@ -1,0 +1,87 @@
+programa
+{
+	funcao sairJogo(){
+		escreva("Saindo...")
+	}
+	
+	funcao placar(inteiro vitJog1, inteiro vitJog2, inteiro empate, inteiro jogos){
+		escreva("=====PLACAR=====\n")
+		escreva("O jogador 1 venceu ",vitJog1, " vez(es)\n")
+		escreva("O jogador 2 venceu ",vitJog2, " vez(es)\n")
+		escreva("Empates: ",empate)
+		escreva("\nForam jogados ",jogos, " jogo(s)")
+		escreva("\n================")
+	}
+	
+	funcao logico verificarPos(inteiro x, inteiro y){
+		se(x>=0 e x<3 e y>=0 e y<3){
+			retorne verdadeiro 
+		}senao{
+			retorne falso
+			escreva("Posição inválida!")
+		}
+	}
+	
+	funcao jogar (){
+		caracter velha[3][3], X = 'X', O = 'O'
+		inteiro i, j, jogadas = 0
+		enquanto(jogadas<9){
+			para(i=0;i<3;i++){
+				para(j=0;j<3;j++){
+					escreva("Jogador 1 escolha sua jogada. ")
+					escreva("\nLinha: ")
+					leia(i)
+					escreva("Coluna: ")
+					leia(j)
+					velha[i][j] = X 
+					escreva("Jogador 2 escolha sua jogada. \n")
+					escreva("Linha: ")
+					leia(i)
+					escreva("Coluna: ")
+					leia(j)
+					velha[i][j] = O
+					jogadas++
+				}
+			}
+		}
+	}
+
+	funcao inicio()
+	{
+	inteiro i, j, opcao, vitJog1=0, vitJog2=0, empate=0, jogos=0
+
+	escreva("======MENU======\n")
+	escreva("1- JOGAR\n2- PLACAR DE VENCEDORES X e O\n3- SAIR\n")
+	escreva("================")	
+	escreva("\nEscolha a opção desejada: ")
+	leia(opcao)
+
+	escolha(opcao){
+		caso 1:
+			jogar()
+		pare
+		
+		caso 2: 
+			placar(vitJog1, vitJog2, empate, jogos)
+		pare 
+		
+		caso 3:
+			sairJogo()
+		pare
+
+		caso contrario:
+			escreva("ERRO! Opção inválida.")
+		}
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 1069; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {velha, 26, 11, 5};
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
